@@ -12,7 +12,7 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"github.com/pkg/errors"
-	"encoding/pem"
+
 
 	"encoding/asn1"
 	"fmt"
@@ -90,7 +90,7 @@ func signProposal(ctx contextApi.Client, proposal *pb.Proposal) (*pb.SignedPropo
 	}
 	fmt.Println("*****[Client Sign]*****")
 	fmt.Printf("Client Message: %x\n", proposalBytes)
-	sk, _ := ctx.PrivateKey()
+	sk := ctx.PrivateKey()
 	var decodedsk PrivateKey
 	_, _ = asn1.Unmarshal(sk, &decodedsk)
 	fmt.Printf("Client PrivateKey: %x\n", decodedsk.D.Bytes())
