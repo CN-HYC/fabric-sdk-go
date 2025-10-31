@@ -12,6 +12,7 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"github.com/pkg/errors"
+	"encoding/pem"
 
 	"encoding/asn1"
 	"fmt"
@@ -79,7 +80,8 @@ func signProposal(ctx contextApi.Client, proposal *pb.Proposal) (*pb.SignedPropo
 	fmt.Println("*****[Client Sign]*****")
 	fmt.Printf("Client Message: %x\n", proposalBytes)
 	sk, _ := ctx.PrivateKey().Bytes()
-	fmt.Printf("Client PrivateKey: %x\n", sk)
+	p, _ := pem.Decode(sk)
+	fmt.Printf("Client PrivateKey: %x\n", p)
 
 	signature, err := signingMgr.Sign(proposalBytes, ctx.PrivateKey())
 	if err != nil {
