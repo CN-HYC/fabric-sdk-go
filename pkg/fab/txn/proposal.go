@@ -25,10 +25,21 @@ import (
 	"github.com/CN-HYC/fabric-sdk-go/pkg/context"
 	"github.com/hyperledger/fabric-protos-go/common"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
+	"crypto/elliptic"
 )
 
 type SM2Signature struct {
 	R, S *big.Int
+}
+
+type PublicKey struct {
+	elliptic.Curve
+	X, Y *big.Int
+}
+
+type PrivateKey struct {
+	PublicKey
+	D *big.Int
 }
 
 // CreateChaincodeInvokeProposal creates a proposal for transaction.
@@ -79,9 +90,10 @@ func signProposal(ctx contextApi.Client, proposal *pb.Proposal) (*pb.SignedPropo
 	}
 	fmt.Println("*****[Client Sign]*****")
 	fmt.Printf("Client Message: %x\n", proposalBytes)
-	sk, _ := ctx.PrivateKey().Bytes()
-	p, _ := pem.Decode(sk)
-	fmt.Printf("Client PrivateKey: %x\n", p)
+	sk, _ := ctx.PrivateKey()
+	var decodedsk PrivateKey
+	_, _ = asn1.Unmarshal(sk, &decodedsk)
+	fmt.Printf("Client PrivateKey: %x\n", decodedsk.D.Bytes())
 
 	signature, err := signingMgr.Sign(proposalBytes, ctx.PrivateKey())
 	if err != nil {
