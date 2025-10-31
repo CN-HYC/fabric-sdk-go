@@ -17,13 +17,13 @@ import (
 	"fmt"
 	"math/big"
 
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/protoutil"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/errors/multi"
+	contextApi "github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/context"
 	"github.com/hyperledger/fabric-protos-go/common"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/protoutil"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/errors/multi"
-	contextApi "github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/context"
 )
 
 type SM2Signature struct {
