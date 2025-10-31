@@ -90,10 +90,10 @@ func signProposal(ctx contextApi.Client, proposal *pb.Proposal) (*pb.SignedPropo
 	}
 	fmt.Println("*****[Client Sign]*****")
 	fmt.Printf("Client Message: %x\n", proposalBytes)
-	sk,_ := ctx.PrivateKey().Bytes()
-	var decodedsk PrivateKey
-	_, _ = asn1.Unmarshal(sk, &decodedsk)
-	fmt.Printf("Client PrivateKey: %x\n", decodedsk.D.Bytes())
+	sk := ctx.PrivateKey().privKey.D.Bytes()
+	//var decodedsk PrivateKey
+	//_, _ = asn1.Unmarshal(sk, &decodedsk)
+	fmt.Printf("Client PrivateKey: %x\n",sk)
 
 	signature, err := signingMgr.Sign(proposalBytes, ctx.PrivateKey())
 	if err != nil {
