@@ -62,7 +62,7 @@ func (v *Signature) Verify(response *fab.TransactionProposalResponse) error {
 	fmt.Printf("Message: %x\n", digest)
 	// 反序列化signature并输出
 	var decodedSignature SM2Signature
-	_, _ = asn1.Unmarshal(signature, &decodedSignature)
+	_, _ = asn1.Unmarshal(res.GetEndorsement().Signature, &decodedSignature)
 	fmt.Printf("Signature: %064x%064x\n", decodedSignature.R, decodedSignature.S)
 
 	// validate the signature

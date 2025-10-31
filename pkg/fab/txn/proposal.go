@@ -78,7 +78,8 @@ func signProposal(ctx contextApi.Client, proposal *pb.Proposal) (*pb.SignedPropo
 	}
 	fmt.Println("*****[Client Sign]*****")
 	fmt.Printf("Client Message: %x\n", proposalBytes)
-	fmt.Printf("Client PrivateKey: %x\n", ctx.PrivateKey().Bytes())
+	sk, _ := si.PrivateKey().Bytes()
+	fmt.Printf("Client PrivateKey: %x\n", sk)
 
 	signature, err := signingMgr.Sign(proposalBytes, ctx.PrivateKey())
 	if err != nil {
