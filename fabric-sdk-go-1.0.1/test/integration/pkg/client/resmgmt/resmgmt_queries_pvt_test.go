@@ -12,13 +12,13 @@ import (
 	"testing"
 
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/client/resmgmt"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/errors/retry"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/errors/status"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fabsdk"
-	"github.com/qinleiyong/fabric-sdk-go/test/integration"
-	"github.com/qinleiyong/fabric-sdk-go/test/metadata"
-	"github.com/qinleiyong/fabric-sdk-go/third_party/github.com/hyperledger/fabric/common/policydsl"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/client/resmgmt"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/errors/retry"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/errors/status"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fabsdk"
+	"github.com/CN-HYC/fabric-sdk-go/test/integration"
+	"github.com/CN-HYC/fabric-sdk-go/test/metadata"
+	"github.com/CN-HYC/fabric-sdk-go/third_party/github.com/hyperledger/fabric/common/policydsl"
 	"github.com/stretchr/testify/require"
 )
 

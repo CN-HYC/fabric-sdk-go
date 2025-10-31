@@ -21,14 +21,14 @@ import (
 	"strings"
 	"time"
 
-	fabricCaUtil "github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/core"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
-	mspProvider "github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/msp"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/core/cryptosuite"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fabsdk"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fabsdk/api"
+	fabricCaUtil "github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
+	mspProvider "github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/msp"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/core/cryptosuite"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fabsdk"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fabsdk/api"
 	"github.com/pkg/errors"
 )
 

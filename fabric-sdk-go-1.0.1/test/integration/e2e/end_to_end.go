@@ -11,25 +11,25 @@ import (
 	"testing"
 	"time"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/errors/retry"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/msp"
-	"github.com/qinleiyong/fabric-sdk-go/test/metadata"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/errors/retry"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/msp"
+	"github.com/CN-HYC/fabric-sdk-go/test/metadata"
 	"github.com/stretchr/testify/require"
 
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/qinleiyong/fabric-sdk-go/test/integration"
-	"github.com/qinleiyong/fabric-sdk-go/third_party/github.com/hyperledger/fabric/common/policydsl"
+	"github.com/CN-HYC/fabric-sdk-go/test/integration"
+	"github.com/CN-HYC/fabric-sdk-go/third_party/github.com/hyperledger/fabric/common/policydsl"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/client/channel"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/client/resmgmt"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/client/channel"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/client/resmgmt"
 
-	mspclient "github.com/qinleiyong/fabric-sdk-go/pkg/client/msp"
+	mspclient "github.com/CN-HYC/fabric-sdk-go/pkg/client/msp"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/core"
-	packager "github.com/qinleiyong/fabric-sdk-go/pkg/fab/ccpackager/gopackager"
-	lcpackager "github.com/qinleiyong/fabric-sdk-go/pkg/fab/ccpackager/lifecycle"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fabsdk"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/core"
+	packager "github.com/CN-HYC/fabric-sdk-go/pkg/fab/ccpackager/gopackager"
+	lcpackager "github.com/CN-HYC/fabric-sdk-go/pkg/fab/ccpackager/lifecycle"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fabsdk"
 )
 
 const (

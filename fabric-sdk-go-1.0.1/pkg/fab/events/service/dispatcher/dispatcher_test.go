@@ -13,10 +13,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fab/events/service/blockfilter"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fab/events/service/blockfilter/headertypefilter"
-	servicemocks "github.com/qinleiyong/fabric-sdk-go/pkg/fab/events/service/mocks"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fab/events/service/blockfilter"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fab/events/service/blockfilter/headertypefilter"
+	servicemocks "github.com/CN-HYC/fabric-sdk-go/pkg/fab/events/service/mocks"
 	cb "github.com/hyperledger/fabric-protos-go/common"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 )

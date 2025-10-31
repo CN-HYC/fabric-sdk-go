@@ -11,7 +11,7 @@ Please review third_party pinning scripts and patches for more details.
 package goruntime
 
 import (
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/metrics"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/metrics"
 )
 
 //gendoc:ignore

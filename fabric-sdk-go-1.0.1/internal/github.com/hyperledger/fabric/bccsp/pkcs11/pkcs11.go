@@ -22,10 +22,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkpatch/cachebridge"
-	sdkp11 "github.com/qinleiyong/fabric-sdk-go/pkg/core/cryptosuite/common/pkcs11"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkpatch/cachebridge"
+	sdkp11 "github.com/CN-HYC/fabric-sdk-go/pkg/core/cryptosuite/common/pkcs11"
 
-	logging "github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkpatch/logbridge"
+	logging "github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkpatch/logbridge"
 	"github.com/miekg/pkcs11"
 )
 

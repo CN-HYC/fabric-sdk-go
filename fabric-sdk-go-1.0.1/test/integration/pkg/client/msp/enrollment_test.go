@@ -12,11 +12,11 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/client/msp"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/context"
-	mspctx "github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/msp"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fabsdk"
-	"github.com/qinleiyong/fabric-sdk-go/test/integration"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/client/msp"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/context"
+	mspctx "github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/msp"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fabsdk"
+	"github.com/CN-HYC/fabric-sdk-go/test/integration"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/require"
 )

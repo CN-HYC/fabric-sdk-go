@@ -9,7 +9,7 @@ package mocks
 import (
 	"fmt"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
 )
 
 // LocalContext supplies the configuration for channel context client

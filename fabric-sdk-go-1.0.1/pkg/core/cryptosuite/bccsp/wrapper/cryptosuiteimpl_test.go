@@ -14,9 +14,9 @@ import (
 	"strings"
 
 	"github.com/golang/mock/gomock"
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/core"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/test/mockcore"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/test/mockcore"
 	"github.com/stretchr/testify/assert"
 )
 

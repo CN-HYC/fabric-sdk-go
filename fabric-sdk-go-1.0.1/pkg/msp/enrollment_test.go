@@ -13,17 +13,17 @@ import (
 	"testing"
 
 	"github.com/golang/mock/gomock"
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/core"
-	providersFab "github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/msp"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/core/config"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/core/cryptosuite"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/core/cryptosuite/bccsp/sw"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fab"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/msp/api"
-	apimocks "github.com/qinleiyong/fabric-sdk-go/pkg/msp/test/mockmspapi"
-	"github.com/qinleiyong/fabric-sdk-go/test/metadata"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/core"
+	providersFab "github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/msp"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/core/config"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/core/cryptosuite"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/core/cryptosuite/bccsp/sw"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fab"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/msp/api"
+	apimocks "github.com/CN-HYC/fabric-sdk-go/pkg/msp/test/mockmspapi"
+	"github.com/CN-HYC/fabric-sdk-go/test/metadata"
 )
 
 var (

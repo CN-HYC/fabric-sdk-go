@@ -12,8 +12,8 @@ import (
 
 	cb "github.com/hyperledger/fabric-protos-go/common"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fab/mocks"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/util/test"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fab/mocks"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/util/test"
 	"github.com/pkg/errors"
 )
 

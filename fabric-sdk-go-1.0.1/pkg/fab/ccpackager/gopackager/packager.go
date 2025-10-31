@@ -16,8 +16,8 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/logging"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fab/resource"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/logging"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fab/resource"
 	"github.com/pkg/errors"
 
 	"fmt"

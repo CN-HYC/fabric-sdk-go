@@ -12,7 +12,7 @@ package policies
 
 import (
 	cb "github.com/hyperledger/fabric-protos-go/common"
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/protoutil"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/protoutil"
 )
 
 // ConfigPolicy defines a common representation for different *cb.ConfigPolicy values.

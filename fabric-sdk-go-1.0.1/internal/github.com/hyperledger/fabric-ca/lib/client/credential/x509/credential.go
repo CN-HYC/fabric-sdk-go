@@ -13,14 +13,14 @@ package x509
 import (
 	"encoding/hex"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/core"
 
-	factory "github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkpatch/cryptosuitebridge"
-	log "github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkpatch/logbridge"
+	factory "github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkpatch/cryptosuitebridge"
+	log "github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkpatch/logbridge"
 
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/lib/client/credential"
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/api"
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/lib/client/credential"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/api"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
 	"github.com/pkg/errors"
 	"github.com/tw-bc-group/net-go-gm/http"
 )

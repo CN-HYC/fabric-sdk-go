@@ -10,7 +10,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/qinleiyong/fabric-sdk-go/test/metadata"
+	"github.com/CN-HYC/fabric-sdk-go/test/metadata"
 	"github.com/stretchr/testify/assert"
 )
 

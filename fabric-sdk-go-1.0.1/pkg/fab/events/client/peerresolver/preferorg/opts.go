@@ -7,9 +7,9 @@ SPDX-License-Identifier: Apache-2.0
 package preferorg
 
 import (
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fab/events/client/lbp"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fab/events/client/peerresolver"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fab/events/client/lbp"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fab/events/client/peerresolver"
 )
 
 type params struct {

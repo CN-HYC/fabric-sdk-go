@@ -9,7 +9,7 @@ package headertypefilter
 import (
 	"testing"
 
-	servicemocks "github.com/qinleiyong/fabric-sdk-go/pkg/fab/events/service/mocks"
+	servicemocks "github.com/CN-HYC/fabric-sdk-go/pkg/fab/events/service/mocks"
 	cb "github.com/hyperledger/fabric-protos-go/common"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 )

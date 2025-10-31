@@ -9,8 +9,8 @@ package factory
 import (
 	"fmt"
 
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp/gm"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp/gm"
 )
 
 const (

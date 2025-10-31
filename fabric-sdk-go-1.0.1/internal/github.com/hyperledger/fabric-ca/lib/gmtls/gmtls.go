@@ -26,10 +26,10 @@ import (
 
 	"github.com/Hyperledger-TWGC/tjfoc-gm/gmtls"
 	x509GM "github.com/Hyperledger-TWGC/tjfoc-gm/x509"
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
-	factory "github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkpatch/cryptosuitebridge"
-	log "github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkpatch/logbridge"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
+	factory "github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkpatch/cryptosuitebridge"
+	log "github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkpatch/logbridge"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/core"
 	"github.com/pkg/errors"
 )
 

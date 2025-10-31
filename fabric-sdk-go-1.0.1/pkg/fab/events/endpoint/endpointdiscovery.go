@@ -9,10 +9,10 @@ package endpoint
 import (
 	"github.com/pkg/errors"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/client/common/discovery"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/logging"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/client/common/discovery"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/logging"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
 )
 
 var logger = logging.NewLogger("fabsdk/fab")

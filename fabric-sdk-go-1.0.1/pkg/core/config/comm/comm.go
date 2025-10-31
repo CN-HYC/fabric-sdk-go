@@ -13,8 +13,8 @@ import (
 
 	"crypto/x509"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/core/cryptosuite"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/core/cryptosuite"
 	"github.com/pkg/errors"
 )
 

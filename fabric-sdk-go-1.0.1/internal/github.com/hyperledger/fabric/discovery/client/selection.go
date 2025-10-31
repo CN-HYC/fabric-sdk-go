@@ -15,7 +15,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/gossip/protoext"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/gossip/protoext"
 )
 
 // Filter filters and sorts the given endorsers

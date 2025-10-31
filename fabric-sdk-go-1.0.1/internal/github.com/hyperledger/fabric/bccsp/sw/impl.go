@@ -23,8 +23,8 @@ import (
 	"hash"
 	"reflect"
 
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
-	flogging "github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkpatch/logbridge"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
+	flogging "github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkpatch/logbridge"
 	"github.com/pkg/errors"
 )
 

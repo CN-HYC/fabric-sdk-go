@@ -9,9 +9,9 @@ package wrapper
 import (
 	"fmt"
 
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
-	bccspSw "github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp/factory/sw"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
+	bccspSw "github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp/factory/sw"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/core"
 )
 
 //getSuiteByConfig returns cryptosuite adaptor for bccsp loaded according to given config

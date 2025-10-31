@@ -9,22 +9,22 @@ package expiredpeer
 import (
 	"testing"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/errors/retry"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/msp"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fabsdk"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/errors/retry"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/msp"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fabsdk"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	mspclient "github.com/qinleiyong/fabric-sdk-go/pkg/client/msp"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/client/resmgmt"
+	mspclient "github.com/CN-HYC/fabric-sdk-go/pkg/client/msp"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/client/resmgmt"
 
-	"github.com/qinleiyong/fabric-sdk-go/test/integration"
+	"github.com/CN-HYC/fabric-sdk-go/test/integration"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/core"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/core/config"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/core/config/lookup"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/core/mocks"
-	fabImpl "github.com/qinleiyong/fabric-sdk-go/pkg/fab"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/core/config"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/core/config/lookup"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/core/mocks"
+	fabImpl "github.com/CN-HYC/fabric-sdk-go/pkg/fab"
 )
 
 const (

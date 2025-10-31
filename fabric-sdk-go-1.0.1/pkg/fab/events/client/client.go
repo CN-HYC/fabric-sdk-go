@@ -11,12 +11,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/logging"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/options"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fab/events/client/dispatcher"
-	eventservice "github.com/qinleiyong/fabric-sdk-go/pkg/fab/events/service"
-	esdispatcher "github.com/qinleiyong/fabric-sdk-go/pkg/fab/events/service/dispatcher"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/logging"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/options"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fab/events/client/dispatcher"
+	eventservice "github.com/CN-HYC/fabric-sdk-go/pkg/fab/events/service"
+	esdispatcher "github.com/CN-HYC/fabric-sdk-go/pkg/fab/events/service/dispatcher"
 	"github.com/pkg/errors"
 )
 

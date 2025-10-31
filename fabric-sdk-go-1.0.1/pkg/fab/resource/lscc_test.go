@@ -9,13 +9,13 @@ package resource
 import (
 	"testing"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
-	contextImpl "github.com/qinleiyong/fabric-sdk-go/pkg/context"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fab/txn"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
+	contextImpl "github.com/CN-HYC/fabric-sdk-go/pkg/context"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fab/txn"
 
 	"time"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fab/mocks"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fab/mocks"
 	"github.com/stretchr/testify/assert"
 )
 

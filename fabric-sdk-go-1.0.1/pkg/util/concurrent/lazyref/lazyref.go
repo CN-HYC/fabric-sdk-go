@@ -14,8 +14,8 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/logging"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/options"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/logging"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/options"
 )
 
 var logger = logging.NewLogger("fabsdk/util")

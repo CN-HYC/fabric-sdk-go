@@ -14,10 +14,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/client/channel"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/errors/retry"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fabsdk"
-	"github.com/qinleiyong/fabric-sdk-go/test/integration"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/client/channel"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/errors/retry"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fabsdk"
+	"github.com/CN-HYC/fabric-sdk-go/test/integration"
 	"github.com/stretchr/testify/require"
 )
 

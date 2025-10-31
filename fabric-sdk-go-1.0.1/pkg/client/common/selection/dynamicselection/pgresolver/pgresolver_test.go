@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/policydsl"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
-	mocks "github.com/qinleiyong/fabric-sdk-go/pkg/fab/mocks"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/policydsl"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
+	mocks "github.com/CN-HYC/fabric-sdk-go/pkg/fab/mocks"
 	common "github.com/hyperledger/fabric-protos-go/common"
 )
 

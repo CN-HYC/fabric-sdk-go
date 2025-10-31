@@ -9,10 +9,10 @@ package options
 import (
 	"sort"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/errors/retry"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/logging"
-	copts "github.com/qinleiyong/fabric-sdk-go/pkg/common/options"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/errors/retry"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/logging"
+	copts "github.com/CN-HYC/fabric-sdk-go/pkg/common/options"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
 )
 
 var logger = logging.NewLogger("fabsdk/client")

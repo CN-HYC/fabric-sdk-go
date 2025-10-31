@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
 
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 )

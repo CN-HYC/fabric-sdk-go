@@ -15,11 +15,11 @@ import (
 	"math"
 
 	cb "github.com/hyperledger/fabric-protos-go/common"
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/capabilities"
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/util"
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/msp"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/capabilities"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/util"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/msp"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/core"
 	"github.com/pkg/errors"
 )
 

@@ -15,9 +15,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/client/channel"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fabsdk"
-	"github.com/qinleiyong/fabric-sdk-go/test/integration"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/client/channel"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fabsdk"
+	"github.com/CN-HYC/fabric-sdk-go/test/integration"
 )
 
 // TestNodeChaincodeInstallInstantiateAndUpgrade tests install node chaincode,

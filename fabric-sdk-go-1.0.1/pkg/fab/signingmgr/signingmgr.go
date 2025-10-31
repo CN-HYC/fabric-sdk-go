@@ -7,9 +7,9 @@ SPDX-License-Identifier: Apache-2.0
 package signingmgr
 
 import (
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/core"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/core/cryptosuite"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/core/cryptosuite"
 	"github.com/pkg/errors"
 )
 

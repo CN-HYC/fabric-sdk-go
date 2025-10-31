@@ -11,9 +11,9 @@ import (
 
 	"time"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
-	fcmocks "github.com/qinleiyong/fabric-sdk-go/pkg/fab/mocks"
-	mspmocks "github.com/qinleiyong/fabric-sdk-go/pkg/msp/test/mockmsp"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
+	fcmocks "github.com/CN-HYC/fabric-sdk-go/pkg/fab/mocks"
+	mspmocks "github.com/CN-HYC/fabric-sdk-go/pkg/msp/test/mockmsp"
 	"github.com/stretchr/testify/assert"
 )
 

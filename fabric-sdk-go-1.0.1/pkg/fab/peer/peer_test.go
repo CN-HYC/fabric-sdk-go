@@ -14,8 +14,8 @@ import (
 
 	"github.com/golang/mock/gomock"
 	"github.com/hyperledger/fabric-protos-go/gossip"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/test/mockfab"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/test/mockfab"
 	"github.com/stretchr/testify/require"
 )
 

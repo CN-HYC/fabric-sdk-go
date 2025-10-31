@@ -7,16 +7,16 @@ SPDX-License-Identifier: Apache-2.0
 package chpvdr
 
 import (
-	"github.com/qinleiyong/fabric-sdk-go/pkg/client/common/discovery/dynamicdiscovery"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/client/common/discovery/staticdiscovery"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/client/common/selection/dynamicselection"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/client/common/selection/fabricselection"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/options"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fab/channel/membership"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fab/chconfig"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fab/events/deliverclient"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/util/concurrent/lazycache"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/client/common/discovery/dynamicdiscovery"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/client/common/discovery/staticdiscovery"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/client/common/selection/dynamicselection"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/client/common/selection/fabricselection"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/options"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fab/channel/membership"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fab/chconfig"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fab/events/deliverclient"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/util/concurrent/lazycache"
 	"github.com/pkg/errors"
 )
 

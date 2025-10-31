@@ -10,7 +10,7 @@ import (
 	"crypto/x509"
 	"time"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/errors/retry"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/errors/retry"
 )
 
 // NetworkConfig provides a static definition of endpoint configuration network

@@ -13,10 +13,10 @@ import (
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 	"github.com/pkg/errors"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/errors/multi"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/errors/status"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
-	contextImpl "github.com/qinleiyong/fabric-sdk-go/pkg/context"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/errors/multi"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/errors/status"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
+	contextImpl "github.com/CN-HYC/fabric-sdk-go/pkg/context"
 )
 
 // LifecycleInstallCCRequest contains the parameters for installing chaincode

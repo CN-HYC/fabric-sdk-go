@@ -12,7 +12,7 @@ import (
 	"time"
 
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/util/test"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/util/test"
 )
 
 // Ledger is a MockLedger

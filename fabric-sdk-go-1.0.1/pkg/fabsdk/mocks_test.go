@@ -9,17 +9,17 @@ SPDX-License-Identifier: Apache-2.0
 package fabsdk
 
 import (
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/core"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/core/logging/api"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/core/logging/api"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/core/cryptosuite"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/core/logging/modlog"
-	fabImpl "github.com/qinleiyong/fabric-sdk-go/pkg/fab"
-	sdkApi "github.com/qinleiyong/fabric-sdk-go/pkg/fabsdk/api"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fabsdk/factory/defcore"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fabsdk/factory/defmsp"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fabsdk/factory/defsvc"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/core/cryptosuite"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/core/logging/modlog"
+	fabImpl "github.com/CN-HYC/fabric-sdk-go/pkg/fab"
+	sdkApi "github.com/CN-HYC/fabric-sdk-go/pkg/fabsdk/api"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fabsdk/factory/defcore"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fabsdk/factory/defmsp"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fabsdk/factory/defsvc"
 	"github.com/pkg/errors"
 )
 

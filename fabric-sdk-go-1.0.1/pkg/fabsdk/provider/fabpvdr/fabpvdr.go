@@ -7,12 +7,12 @@ SPDX-License-Identifier: Apache-2.0
 package fabpvdr
 
 import (
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/logging"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fab/comm"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fab/orderer"
-	peerImpl "github.com/qinleiyong/fabric-sdk-go/pkg/fab/peer"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/logging"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fab/comm"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fab/orderer"
+	peerImpl "github.com/CN-HYC/fabric-sdk-go/pkg/fab/peer"
 	"github.com/pkg/errors"
 )
 

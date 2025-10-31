@@ -13,8 +13,8 @@ package operations
 import (
 	"sync"
 
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/metrics"
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/metrics/prometheus"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/metrics"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/metrics/prometheus"
 )
 
 var (

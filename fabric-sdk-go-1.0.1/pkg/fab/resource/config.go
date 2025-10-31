@@ -11,9 +11,9 @@ import (
 	"github.com/pkg/errors"
 
 	"github.com/hyperledger/fabric-protos-go/common"
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/crypto"
-	fcutils "github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/util"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/crypto"
+	fcutils "github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/util"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/context"
 )
 
 // CreateConfigSignature creates a ConfigSignature for the current context

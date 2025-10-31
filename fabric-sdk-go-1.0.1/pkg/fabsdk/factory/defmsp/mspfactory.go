@@ -7,12 +7,12 @@ SPDX-License-Identifier: Apache-2.0
 package defmsp
 
 import (
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/core"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/msp"
-	kvs "github.com/qinleiyong/fabric-sdk-go/pkg/fab/keyvaluestore"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fabsdk/provider/msppvdr"
-	mspimpl "github.com/qinleiyong/fabric-sdk-go/pkg/msp"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/msp"
+	kvs "github.com/CN-HYC/fabric-sdk-go/pkg/fab/keyvaluestore"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fabsdk/provider/msppvdr"
+	mspimpl "github.com/CN-HYC/fabric-sdk-go/pkg/msp"
 	"github.com/pkg/errors"
 )
 

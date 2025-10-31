@@ -22,7 +22,7 @@ package sw
 import (
 	"errors"
 
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
 )
 
 // NewDummyKeyStore instantiate a dummy key store

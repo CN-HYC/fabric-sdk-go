@@ -23,14 +23,14 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/core"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/core/config"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/core/config/endpoint"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/core/config/lookup"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/core/mocks"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fab/comm"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/util/pathvar"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/core/config"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/core/config/endpoint"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/core/config/lookup"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/core/mocks"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fab/comm"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/util/pathvar"
 )
 
 const (

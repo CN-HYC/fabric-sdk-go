@@ -11,19 +11,19 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/msp"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/core/config"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/core/cryptosuite/bccsp/sw"
-	coreMocks "github.com/qinleiyong/fabric-sdk-go/pkg/core/mocks"
-	"github.com/qinleiyong/fabric-sdk-go/test/metadata"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/msp"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/core/config"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/core/cryptosuite/bccsp/sw"
+	coreMocks "github.com/CN-HYC/fabric-sdk-go/pkg/core/mocks"
+	"github.com/CN-HYC/fabric-sdk-go/test/metadata"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/core/cryptosuite"
-	fabImpl "github.com/qinleiyong/fabric-sdk-go/pkg/fab"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fab/mocks"
-	peerImpl "github.com/qinleiyong/fabric-sdk-go/pkg/fab/peer"
-	mspImpl "github.com/qinleiyong/fabric-sdk-go/pkg/msp"
-	mspmocks "github.com/qinleiyong/fabric-sdk-go/pkg/msp/test/mockmsp"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/core/cryptosuite"
+	fabImpl "github.com/CN-HYC/fabric-sdk-go/pkg/fab"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fab/mocks"
+	peerImpl "github.com/CN-HYC/fabric-sdk-go/pkg/fab/peer"
+	mspImpl "github.com/CN-HYC/fabric-sdk-go/pkg/msp"
+	mspmocks "github.com/CN-HYC/fabric-sdk-go/pkg/msp/test/mockmsp"
 )
 
 func TestCreateInfraProvider(t *testing.T) {

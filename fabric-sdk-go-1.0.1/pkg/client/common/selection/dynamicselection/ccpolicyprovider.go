@@ -16,13 +16,13 @@ import (
 	"github.com/pkg/errors"
 
 	"github.com/hyperledger/fabric-protos-go/common"
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/core/common/ccprovider"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/client/channel"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/errors/status"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/logging"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
-	contextImpl "github.com/qinleiyong/fabric-sdk-go/pkg/context"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/core/common/ccprovider"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/client/channel"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/errors/status"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/logging"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
+	contextImpl "github.com/CN-HYC/fabric-sdk-go/pkg/context"
 )
 
 const loggerModule = "fabsdk/client"

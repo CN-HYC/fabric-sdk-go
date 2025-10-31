@@ -16,8 +16,8 @@ import (
 
 	"encoding/hex"
 
-	flogging "github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkpatch/logbridge"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/util/concurrent/lazycache"
+	flogging "github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkpatch/logbridge"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/util/concurrent/lazycache"
 	"github.com/miekg/pkcs11"
 )
 

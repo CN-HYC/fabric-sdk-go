@@ -11,7 +11,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/util/test"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/util/test"
 )
 
 func ExampleValue_Get() {

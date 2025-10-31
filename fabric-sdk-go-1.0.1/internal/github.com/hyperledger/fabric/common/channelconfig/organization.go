@@ -15,7 +15,7 @@ import (
 
 	cb "github.com/hyperledger/fabric-protos-go/common"
 	mspprotos "github.com/hyperledger/fabric-protos-go/msp"
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/msp"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/msp"
 	"github.com/pkg/errors"
 )
 

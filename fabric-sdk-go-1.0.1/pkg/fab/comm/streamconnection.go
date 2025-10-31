@@ -12,10 +12,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/client/common/verifier"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/options"
-	fabcontext "github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/client/common/verifier"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/options"
+	fabcontext "github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/peer"
 )

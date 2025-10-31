@@ -7,14 +7,14 @@ SPDX-License-Identifier: Apache-2.0
 package dynamicdiscovery
 
 import (
-	discclient "github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/discovery/client"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/client/common/random"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/errors/multi"
-	coptions "github.com/qinleiyong/fabric-sdk-go/pkg/common/options"
-	contextAPI "github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
-	reqContext "github.com/qinleiyong/fabric-sdk-go/pkg/context"
-	fabdiscovery "github.com/qinleiyong/fabric-sdk-go/pkg/fab/discovery"
+	discclient "github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/discovery/client"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/client/common/random"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/errors/multi"
+	coptions "github.com/CN-HYC/fabric-sdk-go/pkg/common/options"
+	contextAPI "github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
+	reqContext "github.com/CN-HYC/fabric-sdk-go/pkg/context"
+	fabdiscovery "github.com/CN-HYC/fabric-sdk-go/pkg/fab/discovery"
 	"github.com/pkg/errors"
 )
 

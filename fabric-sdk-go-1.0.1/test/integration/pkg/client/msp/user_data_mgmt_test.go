@@ -13,15 +13,15 @@ import (
 
 	"encoding/hex"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/client/msp"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/context"
-	mspctx "github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/msp"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/core/cryptosuite"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/core/cryptosuite/bccsp/sw"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fab"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fabsdk"
-	mspimpl "github.com/qinleiyong/fabric-sdk-go/pkg/msp"
-	"github.com/qinleiyong/fabric-sdk-go/test/integration"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/client/msp"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/context"
+	mspctx "github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/msp"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/core/cryptosuite"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/core/cryptosuite/bccsp/sw"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fab"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fabsdk"
+	mspimpl "github.com/CN-HYC/fabric-sdk-go/pkg/msp"
+	"github.com/CN-HYC/fabric-sdk-go/test/integration"
 )
 
 // TestWithCustomStores demonstrates the usage of custom key and cert stores

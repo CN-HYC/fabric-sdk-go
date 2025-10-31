@@ -11,14 +11,14 @@ package provider
 import (
 	"testing"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/client/common/discovery/dynamicdiscovery"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/options"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
-	contextImpl "github.com/qinleiyong/fabric-sdk-go/pkg/context"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fabsdk"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fabsdk/factory/defsvc"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fabsdk/provider/chpvdr"
-	"github.com/qinleiyong/fabric-sdk-go/test/integration"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/client/common/discovery/dynamicdiscovery"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/options"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
+	contextImpl "github.com/CN-HYC/fabric-sdk-go/pkg/context"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fabsdk"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fabsdk/factory/defsvc"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fabsdk/provider/chpvdr"
+	"github.com/CN-HYC/fabric-sdk-go/test/integration"
 	"github.com/stretchr/testify/require"
 )
 

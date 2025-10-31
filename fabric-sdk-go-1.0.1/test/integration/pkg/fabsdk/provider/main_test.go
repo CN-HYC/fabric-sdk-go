@@ -8,9 +8,9 @@ package provider
 import (
 	"testing"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fabsdk"
-	"github.com/qinleiyong/fabric-sdk-go/test/integration"
-	"github.com/qinleiyong/fabric-sdk-go/test/integration/util/runner"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fabsdk"
+	"github.com/CN-HYC/fabric-sdk-go/test/integration"
+	"github.com/CN-HYC/fabric-sdk-go/test/integration/util/runner"
 )
 
 const (

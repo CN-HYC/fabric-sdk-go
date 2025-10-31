@@ -7,10 +7,10 @@ SPDX-License-Identifier: Apache-2.0
 package multisuite
 
 import (
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/core"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/core/cryptosuite/bccsp/gm"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/core/cryptosuite/bccsp/pkcs11"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/core/cryptosuite/bccsp/sw"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/core/cryptosuite/bccsp/gm"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/core/cryptosuite/bccsp/pkcs11"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/core/cryptosuite/bccsp/sw"
 	"github.com/pkg/errors"
 )
 

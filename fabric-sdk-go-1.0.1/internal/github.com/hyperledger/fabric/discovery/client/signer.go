@@ -14,7 +14,7 @@ import (
 	"encoding/hex"
 	"sync"
 
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/util"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/util"
 )
 
 // MemoizeSigner signs messages with the same signature

@@ -7,9 +7,9 @@ SPDX-License-Identifier: Apache-2.0
 package msp
 
 import (
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/core"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fabsdk/factory/defcore"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fabsdk/factory/defcore"
 )
 
 // ========== Core Provider Factory with custom crypto provider ============= //

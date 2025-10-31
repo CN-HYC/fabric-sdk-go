@@ -7,12 +7,12 @@ SPDX-License-Identifier: Apache-2.0
 package gm
 
 import (
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
-	bccspGm "github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp/factory/gm"
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp/sw"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/logging"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/core"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/core/cryptosuite/bccsp/wrapper"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
+	bccspGm "github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp/factory/gm"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp/sw"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/logging"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/core/cryptosuite/bccsp/wrapper"
 	"github.com/pkg/errors"
 )
 

@@ -16,18 +16,18 @@ import (
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/testdata"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/client/channel"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
-	contextImpl "github.com/qinleiyong/fabric-sdk-go/pkg/context"
-	fcmocks "github.com/qinleiyong/fabric-sdk-go/pkg/fab/mocks"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fabsdk"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fabsdk/provider/chpvdr"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/util/pathvar"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/client/channel"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
+	contextImpl "github.com/CN-HYC/fabric-sdk-go/pkg/context"
+	fcmocks "github.com/CN-HYC/fabric-sdk-go/pkg/fab/mocks"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fabsdk"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fabsdk/provider/chpvdr"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/util/pathvar"
 	"github.com/stretchr/testify/require"
 
-	"github.com/qinleiyong/fabric-sdk-go/third_party/github.com/hyperledger/fabric/common/policydsl"
-	"github.com/qinleiyong/fabric-sdk-go/third_party/github.com/hyperledger/fabric/core/common/ccprovider"
+	"github.com/CN-HYC/fabric-sdk-go/third_party/github.com/hyperledger/fabric/common/policydsl"
+	"github.com/CN-HYC/fabric-sdk-go/third_party/github.com/hyperledger/fabric/core/common/ccprovider"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 )
 

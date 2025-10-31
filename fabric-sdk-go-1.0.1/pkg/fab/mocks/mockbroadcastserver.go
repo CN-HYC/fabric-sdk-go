@@ -16,8 +16,8 @@ import (
 	"github.com/hyperledger/fabric-protos-go/common"
 	po "github.com/hyperledger/fabric-protos-go/orderer"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/fab/events/service/mocks"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/util/test"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/fab/events/service/mocks"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/util/test"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 )

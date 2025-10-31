@@ -10,8 +10,8 @@ import (
 	"crypto/ecdsa"
 	"testing"
 
-	fabricCaUtil "github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/core/cryptosuite"
+	fabricCaUtil "github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/core/cryptosuite"
 )
 
 func TestGetPrivateKeyFromCert(t *testing.T) {

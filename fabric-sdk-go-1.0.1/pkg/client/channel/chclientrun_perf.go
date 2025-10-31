@@ -12,8 +12,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/qinleiyong/fabric-sdk-go/pkg/client/channel/invoke"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/errors/status"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/client/channel/invoke"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/errors/status"
 )
 
 func callQuery(cc *Client, request Request, options ...RequestOption) (Response, error) {

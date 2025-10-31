@@ -7,10 +7,10 @@ SPDX-License-Identifier: Apache-2.0
 package dynamicdiscovery
 
 import (
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/logging"
-	coptions "github.com/qinleiyong/fabric-sdk-go/pkg/common/options"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/util/concurrent/lazycache"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/logging"
+	coptions "github.com/CN-HYC/fabric-sdk-go/pkg/common/options"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/util/concurrent/lazycache"
 	"github.com/pkg/errors"
 )
 

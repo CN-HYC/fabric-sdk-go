@@ -14,11 +14,11 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
-	pkcsFactory "github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp/factory/pkcs11"
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp/pkcs11"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/core"
-	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/test/mockcore"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
+	pkcsFactory "github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp/factory/pkcs11"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp/pkcs11"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/test/mockcore"
 )
 
 var securityLevel = 256

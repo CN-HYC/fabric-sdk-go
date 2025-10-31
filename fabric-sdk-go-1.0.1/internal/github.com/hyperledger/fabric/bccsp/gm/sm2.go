@@ -23,7 +23,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/Hyperledger-TWGC/tjfoc-gm/sm2"
-	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
 	"math/big"
 )
 
