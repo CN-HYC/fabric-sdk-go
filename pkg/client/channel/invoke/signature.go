@@ -7,8 +7,8 @@ SPDX-License-Identifier: Apache-2.0
 package invoke
 
 import (
-	"github.com/CN-HYC/fabric-sdk-go/pkg/client/common/verifier"
-	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/qinleiyong/fabric-sdk-go/pkg/client/common/verifier"
+	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
 	"fmt"
 	"github.com/pkg/errors"
 )
@@ -25,7 +25,7 @@ type SignatureValidationHandler struct {
 
 //Handle for Filtering proposal response
 func (f *SignatureValidationHandler) Handle(requestContext *RequestContext, clientContext *ClientContext) {
-	fmt.Println("***** Test Client Handle *****")
+	
 	//Filter tx proposal responses
 	err := f.validate(requestContext.Response.Responses, clientContext)
 	if err != nil {
@@ -40,7 +40,7 @@ func (f *SignatureValidationHandler) Handle(requestContext *RequestContext, clie
 }
 
 func (f *SignatureValidationHandler) validate(txProposalResponse []*fab.TransactionProposalResponse, ctx *ClientContext) error {
-	fmt.Println("***** Test Client validate *****")
+	
 	for _, r := range txProposalResponse {
 		if err := verifyProposalResponse(r, ctx); err != nil {
 			return err
