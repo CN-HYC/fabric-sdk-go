@@ -9,17 +9,19 @@ package verifier
 
 import (
 	"crypto/x509"
-	x509GM "github.com/Hyperledger-TWGC/tjfoc-gm/x509"
 	"time"
 
-	"github.com/hyperledger/fabric-protos-go/common"
-	"github.com/CN-HYC/fabric-sdk-go/pkg/common/errors/status"
-	"github.com/CN-HYC/fabric-sdk-go/pkg/common/logging"
-	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/pkg/errors"
+	x509GM "github.com/Hyperledger-TWGC/tjfoc-gm/x509"
+
 	"encoding/asn1"
 	"fmt"
 	"math/big"
+
+	"github.com/hyperledger/fabric-protos-go/common"
+	"github.com/pkg/errors"
+	"github.com/qinleiyong/fabric-sdk-go/pkg/common/errors/status"
+	"github.com/qinleiyong/fabric-sdk-go/pkg/common/logging"
+	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
 )
 
 const loggerModule = "fabsdk/client"
@@ -58,21 +60,16 @@ func (v *Signature) Verify(response *fab.TransactionProposalResponse) error {
 	digest := append(res.GetPayload(), res.GetEndorsement().Endorser...)
 	fmt.Println("***** [Client Verify]*****")
 	fmt.Printf("Message: %x\n", digest)
-	 // 反序列化signature并输出
+	// 反序列化signature并输出
 	var decodedSignature SM2Signature
-	_, err = asn1.Unmarshal(signature, &decodedSignature)
-	if err != nil {
-    	return nil, err
-	}
+	_, _ = asn1.Unmarshal(signature, &decodedSignature)
 	fmt.Printf("Signature: %064x%064x\n", decodedSignature.R, decodedSignature.S)
-	
+
 	// validate the signature
 	err = v.Membership.Verify(creatorID, digest, res.GetEndorsement().Signature)
 	if err != nil {
 		return errors.WithStack(status.New(status.EndorserClientStatus, status.SignatureVerificationFailed.ToInt32(), "the creator's signature over the proposal is not valid", []interface{}{err.Error()}))
 	}
-
-
 
 	return nil
 }
@@ -82,7 +79,7 @@ func (v *Signature) Match(response []*fab.TransactionProposalResponse) error {
 	return nil
 }
 
-//ValidateCertificateDates used to verify if certificate was expired or not valid until later date
+// ValidateCertificateDates used to verify if certificate was expired or not valid until later date
 func ValidateCertificateDates(cert *x509.Certificate) error {
 	if cert == nil {
 		return nil
@@ -97,7 +94,7 @@ func ValidateCertificateDates(cert *x509.Certificate) error {
 	return nil
 }
 
-//VerifyPeerCertificate verifies raw certs and chain certs for expiry and not yet valid dates
+// VerifyPeerCertificate verifies raw certs and chain certs for expiry and not yet valid dates
 func VerifyPeerCertificate(rawCerts [][]byte, verifiedChains [][]*x509.Certificate) error {
 	for _, chaincert := range rawCerts {
 		cert, err := x509.ParseCertificate(chaincert)
