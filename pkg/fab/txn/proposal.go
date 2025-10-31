@@ -13,16 +13,17 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/pkg/errors"
 
-	"github.com/hyperledger/fabric-protos-go/common"
-	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/protoutil"
-	"github.com/CN-HYC/fabric-sdk-go/pkg/common/errors/multi"
-	contextApi "github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/CN-HYC/fabric-sdk-go/pkg/context"
 	"encoding/asn1"
 	"fmt"
 	"math/big"
+
+	"github.com/hyperledger/fabric-protos-go/common"
+	pb "github.com/hyperledger/fabric-protos-go/peer"
+	"github.com/qinleiyong/fabric-sdk-go/internal/github.com/hyperledger/fabric/protoutil"
+	"github.com/qinleiyong/fabric-sdk-go/pkg/common/errors/multi"
+	contextApi "github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/qinleiyong/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/qinleiyong/fabric-sdk-go/pkg/context"
 )
 
 type SM2Signature struct {
@@ -77,7 +78,7 @@ func signProposal(ctx contextApi.Client, proposal *pb.Proposal) (*pb.SignedPropo
 	}
 	fmt.Println("*****[Client Sign]*****")
 	fmt.Printf("Client Message: %x\n", proposalBytes)
-	fmt.Printf("Client PrivateKey: %x\n", ctx.PrivateKey().D.Bytes())
+	fmt.Printf("Client PrivateKey: %x\n", ctx.PrivateKey().Bytes())
 
 	signature, err := signingMgr.Sign(proposalBytes, ctx.PrivateKey())
 	if err != nil {
@@ -87,7 +88,6 @@ func signProposal(ctx contextApi.Client, proposal *pb.Proposal) (*pb.SignedPropo
 	var decodedSignature SM2Signature
 	_, _ = asn1.Unmarshal(signature, &decodedSignature)
 	fmt.Printf("Client Signature: %064x%064x\n", decodedSignature.R, decodedSignature.S)
-
 
 	return &pb.SignedProposal{ProposalBytes: proposalBytes, Signature: signature}, nil
 }
