@@ -82,7 +82,7 @@ func UnmarshalSM2Signature(raw []byte) (*big.Int, *big.Int, error) {
 func signGMSM2(k *sm2.PrivateKey, digest []byte, opts bccsp.SignerOpts) (signature []byte, err error) {
 	//输出SM2私钥
 	fmt.Printf("------------------------------\n");
-	fmt.Printf("Test SM2 sign:\n");
+	fmt.Printf("Client SM2 sign:\n");
 	fmt.Printf("PrivateKey D: %x\n", k.D.Bytes())
 	fmt.Printf("Message: %x\n", digest)
 	fmt.Printf("Uid: %x\n", default_uid)
@@ -109,7 +109,22 @@ func signGMSM2(k *sm2.PrivateKey, digest []byte, opts bccsp.SignerOpts) (signatu
 }
 
 func verifyGMSM2(k *sm2.PublicKey, signature, digest []byte, opts bccsp.SignerOpts) (valid bool, err error) {
+	//输出SM2私钥
+	fmt.Printf("------------------------------\n");
+	fmt.Printf("Client SM2 verify:\n");
+	fmt.Printf("PublicKey-X: %x\n", k.X.Bytes())
+	fmt.Printf("PublicKey-Y: %x\n", k.Y.Bytes())
+	fmt.Printf("Message: %x\n", digest)
+	fmt.Printf("Uid: %x\n", default_uid)
+	hashres,_:=k.Sm3Digest(digest,default_uid);
+	fmt.Printf("Digest: %x\n", hashres)
+    // 反序列化signature并输出
+	var decodedSignature SM2Signature
+	_, _ = asn1.Unmarshal(signature, &decodedSignature)
+
+	fmt.Printf("Signature: %064x%064x\n", decodedSignature.R, decodedSignature.S)
 	valid = k.Verify(digest, signature)
+	fmt.Printf("Verify result: %v\n", valid)
 	return
 }
 
