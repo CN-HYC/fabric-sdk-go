@@ -27,6 +27,8 @@ import (
 	"github.com/Hyperledger-TWGC/tjfoc-gm/x509"
 	"github.com/hyperledger/fabric-protos-go/common"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
+	"github.com/Hyperledger-TWGC/tjfoc-gm/sm2"
+	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
 )
 
 type SM2Signature struct {
@@ -41,6 +43,14 @@ type PublicKey struct {
 type PrivateKey struct {
 	PublicKey
 	D *big.Int
+}
+
+type key struct {
+	key bccsp.Key
+}
+
+type gmsm2PrivateKey struct {
+	privKey *sm2.PrivateKey
 }
 
 // CreateChaincodeInvokeProposal creates a proposal for transaction.
@@ -91,12 +101,14 @@ func signProposal(ctx contextApi.Client, proposal *pb.Proposal) (*pb.SignedPropo
 	}
 	fmt.Println("*****[Client Sign]*****")
 	fmt.Printf("Client Message: %x\n", proposalBytes)
-	sk, _ := ctx.PrivateKey().Bytes()
+	//sk, _ := ctx.PrivateKey().Bytes()
 	// 1) 反序列化回 sm2.PrivateKey
-	priv, _ := x509.ParseSm2PrivateKey(sk)
+	//priv, _ := x509.ParseSm2PrivateKey(sk)
 	//var decodedsk PrivateKey
 	//_, _ = asn1.Unmarshal(sk, &decodedsk)
-	fmt.Printf("Client PrivateKey: %s\n", priv)
+	//fmt.Printf("Client PrivateKey: %s\n", priv)
+	sk := ctx.PrivateKey().(*key).key.(*gmsm2PrivateKey).privKey.D
+	fmt.Printf("Client PrivateKey: %x\n", sk)
 
 	signature, err := signingMgr.Sign(proposalBytes, ctx.PrivateKey())
 	if err != nil {
