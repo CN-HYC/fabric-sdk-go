@@ -13,19 +13,20 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/pkg/errors"
 
-
 	"encoding/asn1"
 	"fmt"
 	"math/big"
+
+	"crypto/elliptic"
 
 	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/protoutil"
 	"github.com/CN-HYC/fabric-sdk-go/pkg/common/errors/multi"
 	contextApi "github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/context"
 	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
 	"github.com/CN-HYC/fabric-sdk-go/pkg/context"
+	"github.com/Hyperledger-TWGC/tjfoc-gm/x509"
 	"github.com/hyperledger/fabric-protos-go/common"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"crypto/elliptic"
 )
 
 type SM2Signature struct {
@@ -90,10 +91,15 @@ func signProposal(ctx contextApi.Client, proposal *pb.Proposal) (*pb.SignedPropo
 	}
 	fmt.Println("*****[Client Sign]*****")
 	fmt.Printf("Client Message: %x\n", proposalBytes)
-	sk := ctx.PrivateKey().privKey.D.Bytes()
+	sk, _ := ctx.PrivateKey().Bytes()
+	// 1) 反序列化回 sm2.PrivateKey
+	priv, err := x509.ParseSm2PrivateKey(sk)
+	if err != nil {
+		return fmt.Errorf("parse private key failed: %v", err)
+	}
 	//var decodedsk PrivateKey
 	//_, _ = asn1.Unmarshal(sk, &decodedsk)
-	fmt.Printf("Client PrivateKey: %x\n",sk)
+	fmt.Printf("Client PrivateKey: %x\n", priv.D)
 
 	signature, err := signingMgr.Sign(proposalBytes, ctx.PrivateKey())
 	if err != nil {
