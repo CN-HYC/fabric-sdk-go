@@ -24,7 +24,6 @@ import (
 	contextApi "github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/context"
 	"github.com/CN-HYC/fabric-sdk-go/pkg/common/providers/fab"
 	"github.com/CN-HYC/fabric-sdk-go/pkg/context"
-	"github.com/Hyperledger-TWGC/tjfoc-gm/x509"
 	"github.com/hyperledger/fabric-protos-go/common"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 	"github.com/Hyperledger-TWGC/tjfoc-gm/sm2"
