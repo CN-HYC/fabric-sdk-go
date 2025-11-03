@@ -101,13 +101,13 @@ func signProposal(ctx contextApi.Client, proposal *pb.Proposal) (*pb.SignedPropo
 	}
 	fmt.Println("*****[Client Sign]*****")
 	fmt.Printf("Client Message: %x\n", proposalBytes)
-	//sk, _ := ctx.PrivateKey().Bytes()
+	sk, _ := ctx.PrivateKey().Bytes()
 	// 1) 反序列化回 sm2.PrivateKey
 	//priv, _ := x509.ParseSm2PrivateKey(sk)
 	//var decodedsk PrivateKey
 	//_, _ = asn1.Unmarshal(sk, &decodedsk)
 	//fmt.Printf("Client PrivateKey: %s\n", priv)
-	sk := ctx.PrivateKey().(*key).key.(*gmsm2PrivateKey).privKey.D
+	//sk := ctx.PrivateKey().(*key).key.(*gmsm2PrivateKey).privKey.D
 	fmt.Printf("Client PrivateKey: %x\n", sk)
 
 	signature, err := signingMgr.Sign(proposalBytes, ctx.PrivateKey())
