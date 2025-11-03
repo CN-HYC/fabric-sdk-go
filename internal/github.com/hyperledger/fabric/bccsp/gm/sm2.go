@@ -22,10 +22,28 @@ import (
 	"encoding/asn1"
 	"errors"
 	"fmt"
-	"github.com/Hyperledger-TWGC/tjfoc-gm/sm2"
-	"github.com/CN-HYC/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
 	"math/big"
+
+	"github.com/Hyperledger-TWGC/tjfoc-gm/sm2"
+	"github.com/hyperledger/fabric/bccsp"
 )
+
+var (
+	default_uid = []byte{0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37, 0x38, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37, 0x38}
+)
+
+type GenRandReader struct {
+    data []byte
+}
+
+func (d *GenRandReader) Read(p []byte) (n int, err error) {
+    n, err = rand.Reader.Read(p)
+    if err == nil {
+        d.data = append(d.data, p[:n]...)
+        fmt.Printf("Random: %x\n", p[:n])
+    }
+    return
+}
 
 type SM2Signature struct {
 	R, S *big.Int
@@ -76,12 +94,52 @@ func UnmarshalSM2Signature(raw []byte) (*big.Int, *big.Int, error) {
 }
 
 func signGMSM2(k *sm2.PrivateKey, digest []byte, opts bccsp.SignerOpts) (signature []byte, err error) {
+	//输出SM2私钥
+	fmt.Printf("------------------------------\n");
+	fmt.Printf("Test SM2 sign:\n");
+	fmt.Printf("PrivateKey D: %x\n", k.D.Bytes())
+	fmt.Printf("Message: %x\n", digest)
+	fmt.Printf("Uid: %x\n", default_uid)
+	pub := &k.PublicKey
+	fmt.Printf("PublicKey-X: %x\n", pub.X.Bytes())
+	fmt.Printf("PublicKey-Y: %x\n", pub.Y.Bytes())
+	hashres,err:=pub.Sm3Digest(digest,default_uid);
+		if err != nil {
+    	return nil, err
+	}
+	fmt.Printf("Digest: %x\n", hashres)
+	//randomReader := &GenRandReader{}
+	//signature, err = k.Sign(randomReader, digest, opts)
 	signature, err = k.Sign(rand.Reader, digest, opts)
+    // 反序列化signature并输出
+	var decodedSignature SM2Signature
+	_, err = asn1.Unmarshal(signature, &decodedSignature)
+	if err != nil {
+    	return nil, err
+	}
+	fmt.Printf("Signature: %064x%064x\n", decodedSignature.R, decodedSignature.S)
+
 	return
 }
 
 func verifyGMSM2(k *sm2.PublicKey, signature, digest []byte, opts bccsp.SignerOpts) (valid bool, err error) {
+	//输出SM2私钥
+	fmt.Printf("------------------------------\n");
+	fmt.Printf("Test SM2 verify:\n");
+	fmt.Printf("PublicKey-X: %x\n", k.X.Bytes())
+	fmt.Printf("PublicKey-Y: %x\n", k.Y.Bytes())
+	fmt.Printf("Message: %x\n", digest)
+	fmt.Printf("Uid: %x\n", default_uid)
+	hashres,_:=k.Sm3Digest(digest,default_uid);
+	fmt.Printf("Digest: %x\n", hashres)
+    // 反序列化signature并输出
+	var decodedSignature SM2Signature
+	_, _ = asn1.Unmarshal(signature, &decodedSignature)
+
+	fmt.Printf("Signature: %064x%064x\n", decodedSignature.R, decodedSignature.S)
 	valid = k.Verify(digest, signature)
+	fmt.Printf("Verify result: %v\n", valid)
+	
 	return
 }
 
