@@ -27,6 +27,10 @@ import (
 	"math/big"
 )
 
+var (
+	default_uid = []byte{0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37, 0x38, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37, 0x38}
+)
+
 type SM2Signature struct {
 	R, S *big.Int
 }
@@ -76,8 +80,31 @@ func UnmarshalSM2Signature(raw []byte) (*big.Int, *big.Int, error) {
 }
 
 func signGMSM2(k *sm2.PrivateKey, digest []byte, opts bccsp.SignerOpts) (signature []byte, err error) {
-	fmt.Printf("---Test SM2 Sign---\n")
+	//输出SM2私钥
+	fmt.Printf("------------------------------\n");
+	fmt.Printf("Test SM2 sign:\n");
+	fmt.Printf("PrivateKey D: %x\n", k.D.Bytes())
+	fmt.Printf("Message: %x\n", digest)
+	fmt.Printf("Uid: %x\n", default_uid)
+	pub := &k.PublicKey
+	fmt.Printf("PublicKey-X: %x\n", pub.X.Bytes())
+	fmt.Printf("PublicKey-Y: %x\n", pub.Y.Bytes())
+	hashres,err:=pub.Sm3Digest(digest,default_uid);
+		if err != nil {
+    	return nil, err
+	}
+	fmt.Printf("Digest: %x\n", hashres)
+	//randomReader := &GenRandReader{}
+	//signature, err = k.Sign(randomReader, digest, opts)
 	signature, err = k.Sign(rand.Reader, digest, opts)
+    // 反序列化signature并输出
+	var decodedSignature SM2Signature
+	_, err = asn1.Unmarshal(signature, &decodedSignature)
+	if err != nil {
+    	return nil, err
+	}
+	fmt.Printf("Signature: %064x%064x\n", decodedSignature.R, decodedSignature.S)
+
 	return
 }
 
