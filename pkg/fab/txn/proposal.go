@@ -93,10 +93,10 @@ func signProposal(ctx contextApi.Client, proposal *pb.Proposal) (*pb.SignedPropo
 	fmt.Printf("Client Message: %x\n", proposalBytes)
 	sk, _ := ctx.PrivateKey().Bytes()
 	// 1) 反序列化回 sm2.PrivateKey
-	_, _ := x509.ParseSm2PrivateKey(sk)
+	priv, _ := x509.ParseSm2PrivateKey(sk)
 	//var decodedsk PrivateKey
 	//_, _ = asn1.Unmarshal(sk, &decodedsk)
-	//fmt.Printf("Client PrivateKey: %x\n", priv.D)
+	fmt.Printf("Client PrivateKey: %s\n", priv)
 
 	signature, err := signingMgr.Sign(proposalBytes, ctx.PrivateKey())
 	if err != nil {
